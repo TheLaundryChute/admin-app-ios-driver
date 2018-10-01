@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>data</key>
+	<dict>
+		<key>database</key>
+		<string>Data</string>
+	</dict>
+	<key>net</key>
+	<dict>
+		<key>public</key>
+		<string>https://admin.thelaundrychute.com/tlcprocessing</string>
+		<key>host</key>
+		<string>https://admin.thelaundrychute.com/api/v1/</string>
+	</dict>
+	<key>clientId</key>
+	<string>ngAuthApp</string>
+	<key>organization</key>
+	<string>tlc</string>
+	<key>isCustomer</key>
+	<false/>
+	<key>requiresLogin</key>
+	<true/>
+</dict>
+</plist>

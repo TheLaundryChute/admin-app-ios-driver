@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A286a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1pu-gP-qbL">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TLCAdmin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FrJ-56-oeH">
+                                <rect key="frame" x="0.0" y="-5" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="nma-oS-7HF"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="TLC Admin" id="kDh-HI-w0c">
+                                        <barButtonItem key="leftBarButtonItem" title="Log Off" id="h0V-Tk-BsJ">
+                                            <connections>
+                                                <action selector="logOutButtonWasPressed:" destination="BYZ-38-t0r" id="SSO-G9-6rq"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w6P-Hm-oSy">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="w6P-Hm-oSy" firstAttribute="top" secondItem="FrJ-56-oeH" secondAttribute="bottom" id="8eS-b2-sXN"/>
+                            <constraint firstItem="FrJ-56-oeH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="8g6-O3-JOd"/>
+                            <constraint firstItem="FrJ-56-oeH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-5" id="9ZP-0b-daA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="w6P-Hm-oSy" secondAttribute="bottom" id="S8f-G6-Drz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="w6P-Hm-oSy" secondAttribute="trailing" constant="-20" id="bNq-Cu-dCQ"/>
+                            <constraint firstItem="w6P-Hm-oSy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="ciA-4k-DJ4"/>
+                            <constraint firstItem="w6P-Hm-oSy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="eT8-gQ-AlM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FrJ-56-oeH" secondAttribute="trailing" constant="-20" id="mNe-Xj-qN0"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="FrJ-56-oeH"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="uRz-w6-Gzy">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="NR0-fJ-4Ax"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="containerView" destination="w6P-Hm-oSy" id="oYx-ya-kTy"/>
+                        <segue destination="sH2-n2-hfL" kind="show" identifier="capture-qr-code" id="aZJ-2W-wTj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-104" y="120"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cMF-JI-wHe">
+            <objects>
+                <navigationController id="1pu-gP-qbL" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="agt-KS-d0G">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="uhr-Il-plK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WfP-CS-RH1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-940" y="151"/>
+        </scene>
+        <!--Scan QR Code-->
+        <scene sceneID="Eas-mc-TVJ">
+            <objects>
+                <viewController id="sH2-n2-hfL" customClass="QRViewController" customModule="TLCAdmin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zh8-v8-Rej"/>
+                        <viewControllerLayoutGuide type="bottom" id="qqq-5g-j6F"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CSj-cO-Bb4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EuP-qh-QLD">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SML-ju-tpS">
+                                <rect key="frame" x="0.0" y="552" width="600" height="48"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.25" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="kq5-nj-AHp"/>
+                                </constraints>
+                                <state key="normal" title="Cancel Scan"/>
+                                <connections>
+                                    <action selector="cancelButtonWasPressed:" destination="sH2-n2-hfL" eventType="touchUpInside" id="Dln-3D-7dS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qqq-5g-j6F" firstAttribute="top" secondItem="SML-ju-tpS" secondAttribute="bottom" id="DDr-ny-7U9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SML-ju-tpS" secondAttribute="trailing" constant="-20" id="FYo-Ul-1EG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EuP-qh-QLD" secondAttribute="trailing" constant="-20" id="TNx-1I-8bp"/>
+                            <constraint firstItem="qqq-5g-j6F" firstAttribute="top" secondItem="EuP-qh-QLD" secondAttribute="bottom" id="a0t-CW-hCf"/>
+                            <constraint firstItem="SML-ju-tpS" firstAttribute="leading" secondItem="CSj-cO-Bb4" secondAttribute="leadingMargin" constant="-20" id="bpf-U7-lkM"/>
+                            <constraint firstItem="EuP-qh-QLD" firstAttribute="top" secondItem="Zh8-v8-Rej" secondAttribute="bottom" id="oW2-Lu-Ogx"/>
+                            <constraint firstItem="EuP-qh-QLD" firstAttribute="leading" secondItem="CSj-cO-Bb4" secondAttribute="leadingMargin" constant="-20" id="pna-fe-pug"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Scan QR Code" id="phb-0m-8gX">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="cancel" id="WQz-XM-R9L">
+                            <connections>
+                                <action selector="cancelButtonWasPressed:" destination="sH2-n2-hfL" id="3dx-h0-OCZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="qrView" destination="EuP-qh-QLD" id="nsD-y8-aWU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DhI-MH-Ei3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="666" y="68"/>
+        </scene>
+    </scenes>
+</document>

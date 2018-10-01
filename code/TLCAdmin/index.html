@@ -1,0 +1,21 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        
+        <input type="button" value="getQR" onclick="requestQr()" />
+        <input type="text" id="qrResult" />
+        
+        <script type="text/javascript">
+            function requestQr() {
+                window.location = "inmo://qr-code";
+            }
+        
+        
+        function qrRespond(code) {
+            document.getElementById("qrResult").value = code;
+        }
+            </script>
+    </body>
+</html>

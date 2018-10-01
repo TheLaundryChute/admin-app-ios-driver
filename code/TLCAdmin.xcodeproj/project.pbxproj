@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CF8FD4649C8909F97550614 /* Pods_TLCAdmin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3229BB967808C97DC9EBDA /* Pods_TLCAdmin.framework */; };
+		4534D68D1D50CB0C00F018CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4534D68C1D50CB0C00F018CA /* AppDelegate.swift */; };
+		4534D68F1D50CB0C00F018CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4534D68E1D50CB0C00F018CA /* ViewController.swift */; };
+		4534D6921D50CB0C00F018CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4534D6901D50CB0C00F018CA /* Main.storyboard */; };
+		4534D6941D50CB0C00F018CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4534D6931D50CB0C00F018CA /* Assets.xcassets */; };
+		4534D6971D50CB0C00F018CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4534D6951D50CB0C00F018CA /* LaunchScreen.storyboard */; };
+		4534D6A51D50CC7300F018CA /* inmotion-config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4534D6A41D50CC7300F018CA /* inmotion-config.plist */; };
+		45619A4D1D54E6A700A9D3B4 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45619A4C1D54E6A700A9D3B4 /* QRViewController.swift */; };
+		45619A4F1D54E7F300A9D3B4 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 45619A4E1D54E7F300A9D3B4 /* index.html */; };
+		45CB3EA41D5893C400A22526 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45CB3EA21D5893C400A22526 /* Fabric.framework */; };
+		45CB3EA51D5893C400A22526 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45CB3EA31D5893C400A22526 /* Crashlytics.framework */; };
+		AD91C34C215D26F400CBF6F1 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD91C34B215D26F400CBF6F1 /* LoginView.xib */; };
+		AD91C34E215D2F7A00CBF6F1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91C34D215D2F7A00CBF6F1 /* LoginViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4534D6AA1D50CCA000F018CA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4534D6891D50CB0B00F018CA /* TLCAdmin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TLCAdmin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4534D68C1D50CB0C00F018CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4534D68E1D50CB0C00F018CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4534D6911D50CB0C00F018CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4534D6931D50CB0C00F018CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4534D6961D50CB0C00F018CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4534D6981D50CB0C00F018CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4534D6A41D50CC7300F018CA /* inmotion-config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "inmotion-config.plist"; sourceTree = "<group>"; };
+		45619A4C1D54E6A700A9D3B4 /* QRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
+		45619A4E1D54E7F300A9D3B4 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		45CB3EA21D5893C400A22526 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		45CB3EA31D5893C400A22526 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		48395B976CA686C67F359DB1 /* Pods-TLCAdmin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TLCAdmin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TLCAdmin/Pods-TLCAdmin.debug.xcconfig"; sourceTree = "<group>"; };
+		84576A33CFEE592C2BE6614A /* Pods-TLCAdmin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TLCAdmin.release.xcconfig"; path = "Pods/Target Support Files/Pods-TLCAdmin/Pods-TLCAdmin.release.xcconfig"; sourceTree = "<group>"; };
+		AD91C34B215D26F400CBF6F1 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		AD91C34D215D2F7A00CBF6F1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FC3229BB967808C97DC9EBDA /* Pods_TLCAdmin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TLCAdmin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4534D6861D50CB0B00F018CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45CB3EA51D5893C400A22526 /* Crashlytics.framework in Frameworks */,
+				45CB3EA41D5893C400A22526 /* Fabric.framework in Frameworks */,
+				0CF8FD4649C8909F97550614 /* Pods_TLCAdmin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B40B5BD8A0CE0BA1EFC02AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				48395B976CA686C67F359DB1 /* Pods-TLCAdmin.debug.xcconfig */,
+				84576A33CFEE592C2BE6614A /* Pods-TLCAdmin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4534D6801D50CB0B00F018CA = {
+			isa = PBXGroup;
+			children = (
+				45CB3EA21D5893C400A22526 /* Fabric.framework */,
+				45CB3EA31D5893C400A22526 /* Crashlytics.framework */,
+				4534D68B1D50CB0C00F018CA /* TLCAdmin */,
+				4534D68A1D50CB0B00F018CA /* Products */,
+				0B40B5BD8A0CE0BA1EFC02AE /* Pods */,
+				A93BCD4F205445D98EA6E0B7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4534D68A1D50CB0B00F018CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4534D6891D50CB0B00F018CA /* TLCAdmin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4534D68B1D50CB0C00F018CA /* TLCAdmin */ = {
+			isa = PBXGroup;
+			children = (
+				4534D6A41D50CC7300F018CA /* inmotion-config.plist */,
+				4534D68C1D50CB0C00F018CA /* AppDelegate.swift */,
+				4534D68E1D50CB0C00F018CA /* ViewController.swift */,
+				4534D6901D50CB0C00F018CA /* Main.storyboard */,
+				4534D6931D50CB0C00F018CA /* Assets.xcassets */,
+				4534D6951D50CB0C00F018CA /* LaunchScreen.storyboard */,
+				4534D6981D50CB0C00F018CA /* Info.plist */,
+				45619A4C1D54E6A700A9D3B4 /* QRViewController.swift */,
+				45619A4E1D54E7F300A9D3B4 /* index.html */,
+				AD91C34B215D26F400CBF6F1 /* LoginView.xib */,
+				AD91C34D215D2F7A00CBF6F1 /* LoginViewController.swift */,
+			);
+			path = TLCAdmin;
+			sourceTree = "<group>";
+		};
+		A93BCD4F205445D98EA6E0B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC3229BB967808C97DC9EBDA /* Pods_TLCAdmin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4534D6881D50CB0B00F018CA /* TLCAdmin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4534D69B1D50CB0C00F018CA /* Build configuration list for PBXNativeTarget "TLCAdmin" */;
+			buildPhases = (
+				6CD3B1AA52B97595D7977F13 /* [CP] Check Pods Manifest.lock */,
+				4534D6851D50CB0B00F018CA /* Sources */,
+				4534D6861D50CB0B00F018CA /* Frameworks */,
+				4534D6871D50CB0B00F018CA /* Resources */,
+				4534D6AA1D50CCA000F018CA /* Embed Frameworks */,
+				45CB3EA11D5893B500A22526 /* ShellScript */,
+				4553E6DB1D5C09FE00FBAD82 /* ShellScript */,
+				804FA863D9EF86C323E2229F /* [CP] Embed Pods Frameworks */,
+				B96F94982EB7A748A08AB1E9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TLCAdmin;
+			productName = TLCAdmin;
+			productReference = 4534D6891D50CB0B00F018CA /* TLCAdmin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4534D6811D50CB0B00F018CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "The Laundry Chute";
+				TargetAttributes = {
+					4534D6881D50CB0B00F018CA = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = ACAAFF22ZF;
+						LastSwiftMigration = 1000;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4534D6841D50CB0B00F018CA /* Build configuration list for PBXProject "TLCAdmin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4534D6801D50CB0B00F018CA;
+			productRefGroup = 4534D68A1D50CB0B00F018CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4534D6881D50CB0B00F018CA /* TLCAdmin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4534D6871D50CB0B00F018CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4534D6A51D50CC7300F018CA /* inmotion-config.plist in Resources */,
+				4534D6971D50CB0C00F018CA /* LaunchScreen.storyboard in Resources */,
+				AD91C34C215D26F400CBF6F1 /* LoginView.xib in Resources */,
+				45619A4F1D54E7F300A9D3B4 /* index.html in Resources */,
+				4534D6941D50CB0C00F018CA /* Assets.xcassets in Resources */,
+				4534D6921D50CB0C00F018CA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4553E6DB1D5C09FE00FBAD82 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
+		};
+		45CB3EA11D5893B500A22526 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run a06f3321ac4e1035dd648de28320f4d6ac344cca 14317f832f17098e10107ff914b3749937aff5ab41fdd5f5ff1a56c893a73a72";
+		};
+		6CD3B1AA52B97595D7977F13 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TLCAdmin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		804FA863D9EF86C323E2229F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TLCAdmin/Pods-TLCAdmin-frameworks.sh",
+				"${PODS_ROOT}/InMotion/InMotion.framework",
+				"${PODS_ROOT}/InMotion/InMotionUI.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InMotion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InMotionUI.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TLCAdmin/Pods-TLCAdmin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B96F94982EB7A748A08AB1E9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TLCAdmin/Pods-TLCAdmin-resources.sh",
+				"${PODS_ROOT}/InMotion/InMotionUIAssets.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/InMotionUIAssets.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TLCAdmin/Pods-TLCAdmin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4534D6851D50CB0B00F018CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD91C34E215D2F7A00CBF6F1 /* LoginViewController.swift in Sources */,
+				4534D68F1D50CB0C00F018CA /* ViewController.swift in Sources */,
+				4534D68D1D50CB0C00F018CA /* AppDelegate.swift in Sources */,
+				45619A4D1D54E6A700A9D3B4 /* QRViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4534D6901D50CB0C00F018CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4534D6911D50CB0C00F018CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4534D6951D50CB0C00F018CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4534D6961D50CB0C00F018CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4534D6991D50CB0C00F018CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4534D69A1D50CB0C00F018CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4534D69C1D50CB0C00F018CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48395B976CA686C67F359DB1 /* Pods-TLCAdmin.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ACAAFF22ZF;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = TLCAdmin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.buildinmotion.clients.com.thelaundrychute.apps.Admin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		4534D69D1D50CB0C00F018CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84576A33CFEE592C2BE6614A /* Pods-TLCAdmin.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ACAAFF22ZF;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = TLCAdmin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.buildinmotion.clients.com.thelaundrychute.apps.Admin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4534D6841D50CB0B00F018CA /* Build configuration list for PBXProject "TLCAdmin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4534D6991D50CB0C00F018CA /* Debug */,
+				4534D69A1D50CB0C00F018CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4534D69B1D50CB0C00F018CA /* Build configuration list for PBXNativeTarget "TLCAdmin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4534D69C1D50CB0C00F018CA /* Debug */,
+				4534D69D1D50CB0C00F018CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4534D6811D50CB0B00F018CA /* Project object */;
+}
